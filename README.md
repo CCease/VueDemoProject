@@ -1,5 +1,28 @@
 # vuedemoproject
 
+Planned Application: 
+
+```
+Root Component
+└─ Application
+   └─ TodoList
+      ├─ AddTodo
+      ├─ TodoItem
+      │  ├─ DeleteTodoButton
+      │  └─ EditTodoButton
+      └─ TodoListFooter
+         ├─ ClearTodosButton
+         └─ TodoListStatistics
+```
+
+
+
+- Counter Button
+- Todo App + JSON placeholder
+- blinking animation ?
+
+
+
 ## Project setup
 ```
 npm install

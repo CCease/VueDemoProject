@@ -13,7 +13,7 @@
   </div>
 
   <!-- router-view is the view part of the page -->
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
