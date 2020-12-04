@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>LifeCountPage</h1>
+        <h1>LifeCountPage (WIP)</h1>
         <!-- Date picker here -->
         <p>Date Picker</p>
         <!-- Block here -->
