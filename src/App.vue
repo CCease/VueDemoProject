@@ -9,7 +9,9 @@
 
     <router-link to="/">Home</router-link> |
     <router-link to="/app">App</router-link> |
+    <router-link to="/lifecount">Life Count</router-link> |
     <router-link to="/about">About</router-link>
+    
   </div>
 
   <!-- router-view is the view part of the page -->
