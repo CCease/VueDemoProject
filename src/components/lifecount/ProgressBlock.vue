@@ -18,9 +18,9 @@
         v-for="(block, index) in this.blocks"
         :key="index"
         :class="[
-          { past: index < this.todayProgress },
-          { future: index > this.todayProgress },
-          { today: index === this.todayProgress },
+          { past: index < progress },
+          { future: index > progress },
+          { today: index === progress },
         ]"
       >
         {{ index }}
@@ -33,10 +33,10 @@
 import dayjs from "dayjs";
 
 export default {
+  //Todos: Calculate sleep time.
   name: "ProgressBlock",
   props: {
     progress: Number,
-    livedDays: Number
   },
   data() {
     return {
@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     lifeLength(){
-        return 365*80
+        return "Life Length: "+365*80+" Days"
     },
     blocks() {
       var arr = [];
