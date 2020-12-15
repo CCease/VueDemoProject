@@ -6,8 +6,6 @@
     :default-value="dafaultValue"
     @change="$emit('input', date)"
   />
-
-  <p>{{ this.date }}</p>
 </template>
 
 <script>
