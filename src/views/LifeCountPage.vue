@@ -11,6 +11,7 @@
     
     <div class="legend" :style="visibility">
       <h2>Legend</h2>
+      <p>Dividing life into 400 blocks assuming one lives 80 years.</p>
       <div class="blockdata">
         <div class="data past"></div>
         The time passed
