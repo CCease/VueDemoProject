@@ -2,14 +2,15 @@
   <div>
     <h1>LifeCountPage</h1>
     <!-- Date picker here -->
-    <date-picker @input="date = $event" :dafaultValue="this.date" />
+    <date-picker @input="input($event)" :dafaultValue="this.date" />
 
     <!-- Block here -->
-    <ProgressBlock :progress="todayBlock" />
+    <ProgressBlock :progress="todayBlock" :style="visibility"/>
 
     <!-- Information -->
-    <h2>Legend</h2>
-    <div class="legend">
+    
+    <div class="legend" :style="visibility">
+      <h2>Legend</h2>
       <div class="blockdata">
         <div class="data past"></div>
         The time passed
@@ -52,7 +53,14 @@ export default {
   data() {
     return {
       date: dayjs().subtract(18, "y"),
+      visibility: "visibility: hidden",
     };
+  },
+  methods:{
+    input(date){
+      this.date = date;
+      this.visibility = "visibility: visible"
+    }
   },
   computed: {
     passedDays() {
