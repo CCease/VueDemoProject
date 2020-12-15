@@ -1,25 +1,8 @@
 # vuedemoproject
 
-Planned Application: 
-
-```
-Root Component
-└─ Application
-   └─ TodoList
-      ├─ AddTodo
-      ├─ TodoItem
-      │  ├─ DeleteTodoButton
-      │  └─ EditTodoButton
-      └─ TodoListFooter
-         ├─ ClearTodosButton
-         └─ TodoListStatistics
-```
-
-
-
 - Counter Button
-- Todo App + JSON placeholder
-- blinking animation ?
+- Todo App + JSON placeholder 
+- Life Count
 
 
 
@@ -42,6 +25,12 @@ npm run build
 ```
 npm run lint
 ```
+
+### Deploy to Github Pages
+```
+npm run deploy
+```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
